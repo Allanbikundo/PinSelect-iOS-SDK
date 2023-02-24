@@ -32,10 +32,9 @@ public class PinOnMobile: UIViewController {
                 
                 institution: Institution(callbackUrl: institutionData.callbackURL, id: institutionData.institutionId),
                 account: Account(
-                    accountNumber: accountData.accountNumber,
-                    cardSerialNumber: accountData.cardSerNo,
-                    expiryDate: accountData.expriyDate!,
-                    cvv: "")
+                    isDebit: accountData.isDebit,
+                    cardSerialNumber: accountData.cardSerNo
+                    )
             )
             
     
